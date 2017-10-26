@@ -8,9 +8,29 @@
 #include "targetver.h"
 
 #define WIN32_LEAN_AND_MEAN             // Exclude rarely-used stuff from Windows headers
+
+//define 
+#define DECLDIR __declspec(dllexport)
+#define DLL_EXPORT
+
+
 // Windows Header Files:
 #include <windows.h>
 
 
+//Opencv 3.3 specific
+#include <opencv2/opencv.hpp>
 
-// TODO: reference additional headers your program requires here
+//custom headers
+#include "FeatureExtractor.h"
+#include "Subject.h"
+#include "HashComparitor.h"
+
+
+using namespace std;
+using namespace cv;
+
+extern "C"
+{
+
+}
